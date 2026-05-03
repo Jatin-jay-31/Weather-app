@@ -16,14 +16,14 @@ const apiKey = '033659cb10215eb143151f3afcbf4195'
 
 function changeIcon(value) {
     let icon = {
-        Clear: '/images/clear.png',
-        Clouds: '/images/clouds.png',
-        Drizzle: '/images/drizzle.png',
-        Haze: '/images/haze.png',
-        Mist: '/images/mist.png',
-        Rain: '/images/rain.png',
-        Snow: '/images/snow.png',
-        Thunderstorm: '/images/thunderstorm.png'
+        Clear: 'images/clear.png',
+        Clouds: 'images/clouds.png',
+        Drizzle: 'images/drizzle.png',
+        Haze: 'images/haze.png',
+        Mist: 'images/mist.png',
+        Rain: 'images/rain.png',
+        Snow: 'images/snow.png',
+        Thunderstorm: 'images/thunderstorm.png'
     }
     return icon[value]
 }
@@ -79,7 +79,7 @@ search.addEventListener('click', (e) => {
 reset.addEventListener('click', () => {
     box3.classList.add('hide');
     box1.classList.remove('hide');
-    weatherIcon.src='/images/clear.png'
+    weatherIcon.src='images/clear.png'
     temperature.innerHTML = '0°C'
     windSpeed.innerHTML = '0km/h'
     humidity.innerHTML = '0%'
