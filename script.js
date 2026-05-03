@@ -25,7 +25,7 @@ function changeIcon(value) {
         Snow: 'images/snow.png',
         Thunderstorm: 'images/thunderstorm.png'
     }
-    return icon[value]
+    return icon[value] || images/clear.png
 }
 start.addEventListener('click', () => {
     box1.classList.add('hide');
