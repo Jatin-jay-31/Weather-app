@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(174, 26, 174, 0.705),grey);
+}
+.mainbox{
+    position: relative;
+    height: 550px;
+    width: 350px;
+    border-radius: 20px;
+    background: linear-gradient(rgb(43, 6, 56),rgb(202, 175, 241));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 30px;
+}
+h2{
+    font-size: 3rem;
+    color: gold;
+    font-weight: normal;
+}
+.btn{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgba(255, 217, 0, 0.882);
+    border: none;
+    color: rgba(0, 0, 0, 0.736);
+    font-weight: bold;
+    margin-top: 15px;
+}
+.btn:hover{
+    transform: scale(1.05);
+    color: rgba(0, 0, 0);
+    background-color: gold;
+    transform-origin: all 0.1s ease;
+
+}
+.searchBox{
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+.searchBox input{
+    flex: 1;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.searchBox input::placeholder{
+    color: rgb(77, 78, 79);
+}
+.searchBox input:focus::placeholder{
+    color: transparent;
+}
+.material-symbols-outlined {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    cursor: pointer;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin-bottom: 20px;
+}
+#weathericon{
+    width: 90%;
+}
+.tempbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.tempbox h1{
+    font-size: 4rem;
+}
+.tempbox h3{
+    font-size: 2rem;
+    color:gold;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.extradetails{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.windbox,.humiditybox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.icon img{
+    width: 50px;
+}
+.details{
+    font-size: 1rem;
+}
+.text{
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+}
+p{
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.error{
+    color: gold;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.errortext{
+    font-weight: normal;
+}
+.hide{
+    display: none;
+}
